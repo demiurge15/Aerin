@@ -1,0 +1,349 @@
+/* General Reset */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom right, #f8f9fa, #f6a1c3);
+    color: #070707;
+  }
+  
+  /* Navbar Styles */
+  header.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #5d5d5d;
+    color: #fff;
+  }
+  
+  header.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  header.navbar .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  header.navbar .nav-links li {
+    margin: 0 10px;
+  }
+  
+  header.navbar .nav-links a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  header.navbar .nav-links a:hover {
+    color: #ffa500;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom right, #ffe8d6, #f79fd0);
+    color: #333;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .hero button {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .hero button:hover {
+    background-color: #ffa500;
+  }
+  
+  /* Explore Section */
+  .gallery {
+    padding: 30px;
+  }
+  
+  .gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #222;
+  }
+
+
+  h2 {
+
+    text-align: center; 
+    margin: 20px 0; 
+    font-size: 36px; 
+    font-weight: bold; 
+    color: black; 
+
+  }
+      
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .grid-item {
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    display: block;
+    border-bottom: 2px solid #f8f7f6;
+  }
+   
+  .grid-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Login Page Styles */
+  .classy-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: -webkit-linear-gradient(to left, black, blue, blue, black 800px);
+  }
+  
+  .login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background: -webkit-linear-gradient(to left, rgb(209, 79, 159), rgb(243, 79, 205), rgb(236, 204, 233), rgb(42, 1, 37) 800px); background: rgb(227, 194, 222);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    margin-bottom: 15px;
+  }
+  
+  .login-container p {
+    margin-bottom: 20px;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #110505;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f48282;
+    color: rgb(8, 8, 8);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #ffa500;
+  }
+  
+  .login-footer {
+    margin-top: 15px;
+  }
+   /* Modal Background */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+  margin-top: 20px;
+}
+
+.modal-buttons .btn-confirm,
+.modal-buttons .btn-cancel {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.modal-buttons .btn-confirm {
+  background: #4caf50;
+  color: white;
+}
+
+.modal-buttons .btn-confirm:hover {
+  background: #45a049;
+}
+
+.modal-buttons .btn-cancel {
+  background: #f44336;
+  color: white;
+}
+
+.modal-buttons .btn-cancel:hover {
+  background: #e53935;
+}
+
+/* Animation for Modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* Notification Styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f9ff;
+  color: #003366;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 5s ease-in-out;
+  z-index: 1000;
+}
+
+/* Success Notification */
+.notification.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #c8e6c9;
+}
+
+/* Warning Notification */
+.notification.warning {
+  background-color: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ffcc80;
+}
+
+/* Notification Fade In and Out Animation */
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  90% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-20px); }
+}
+
+/* Notification Styles */
+#notification-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  padding: 15px 20px;
+  background-color: #fff3e0;
+  color: #ef6c00;
+  border: 1px solid #ffcc80;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 5s ease-in-out;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.notification .icon {
+  margin-right: 30px;
+  font-size: 1.5rem;
+}
+
+.notification .close-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #ef6c00;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.notification .close-btn:hover {
+  color: #d84315;
+}
+
+/* Animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}

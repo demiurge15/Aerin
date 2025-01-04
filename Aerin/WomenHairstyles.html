@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women HairStyles</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+
+    .exit-button {
+      position: absolute; 
+      top: 10px; 
+      right: 20px; 
+      padding: 5px 20px;
+      font-size: 14px;
+      color: white;
+      background-color: #020202; 
+      border: black;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-transform: uppercase;
+      font-weight: normal;
+      z-index: 500; 
+    }
+
+    .exit-button:hover {
+      background-color: #fa81f0;
+
+    .exit-button:active {
+      background-color: #fa81f0; 
+    }
+    }
+
+  </style>
+</head>
+<body>
+  <button id="exit-button" class="exit-button">Exit</button>
+  <section>
+    <h2>Women HairStyles</h2>
+    <div class="grid">
+      <div class="grid-item"><img src="wavywomen.jpg" alt="wavywomen"></div>
+      <div class="grid-item"><img src="curly.jpg" alt="curly"></div>
+      <div class="grid-item"><img src="ponytail.jpg" alt="ponytail"></div>
+      <div class="grid-item"><img src="shorthair.jpg" alt="shorthair"></div>
+      <div class="grid-item"><img src="mulletwomen.jpg" alt="mulletwomen"></div>
+      <div class="grid-item"><img src="womensimpple.jpg" alt="womensimpple"></div>
+      <div class="grid-item"><img src="twohairwomen.jpg" alt="twohairwomen"></div>
+      <div class="grid-item"><img src="brown.jpg" alt="brown"></div>
+      <div class="grid-item"><img src="ganda.webp" alt="ganda"></div>
+    </div>
+  </section>
+
+  <script>
+    // Add functionality to the Exit button
+    document.getElementById('exit-button').addEventListener('click', () => {
+      // Redirect to the main page
+      window.location.href = 'index.html';
+    });
+
+  </script>
+</body>
+</html>
